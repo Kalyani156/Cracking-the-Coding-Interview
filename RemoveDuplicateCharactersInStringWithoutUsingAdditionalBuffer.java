@@ -23,10 +23,10 @@ public class RemoveDuplicateCharactersInStringWithoutUsingAdditionalBuffer {
 		for (int i = 1; i < data.length; i++) {
 			for (int j = 0; j < i; j++) {
 				if (data[i] == data[j]) {
-					data[i] = ' ';
+					data[i] = '%';
 				}
 			}
 		}
-		return new String(data).replaceAll("\\s", "");
+		return new String(data).replaceAll("%", "");
 	}
 }
