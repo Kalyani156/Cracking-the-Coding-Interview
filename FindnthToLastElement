@@ -1,5 +1,14 @@
 /**
 Implement an algorithm to find the nth to last element of a singly linked list
+
+Thinking process:
+1. Find nth node in normal order.
+2. Have a head at index0.
+3. Move both head and nth node. WHen nth node hit null/end, then the moving head is the nth to last node in list.
+
+
+
+
 **/
 
 public Node find_nth_to_last( Node head, int n )
