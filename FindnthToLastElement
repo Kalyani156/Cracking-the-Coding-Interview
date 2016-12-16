@@ -1,0 +1,19 @@
+/**
+Implement an algorithm to find the nth to last element of a singly linked list
+**/
+
+public Node find_nth_to_last( Node head, int n )
+{
+    Node point1 = head;
+    for( int i = 0; i < n; i++ )
+    {
+        point1 = point1.next;
+    }
+    Node point2 = head;
+    while( point1.next != null )
+    {
+        point1 = point1.next;
+        point2 = point2.next;
+    }
+    return point2;
+}
